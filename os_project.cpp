@@ -41,6 +41,8 @@ int main()
 	    void* result;
 		pthread_t t1[50],t2[50];
 		int n1,n2,i;
+	        pthread_mutex_init(&wrt,NULL);
+		pthread_mutex_init(&red,NULL);
 		printf("enter reader=");
 		scanf("%d",&n1);
 	    printf("enter  writer");
